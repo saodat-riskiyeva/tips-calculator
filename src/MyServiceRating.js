@@ -8,7 +8,7 @@ export default function MyServiceRating({ rating, setRating }) {
       <select
         id="serviceRating"
         value={rating}
-        onChange={(e) => setRating(e.target.value)}
+        onChange={(e) => setRating(Number(e.target.value))}
       >
         {serviceRating.map((option) => {
           return (

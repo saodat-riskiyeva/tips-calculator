@@ -6,8 +6,9 @@ export default function Bill({ bill, handleBill }) {
       <input
         type="text"
         id="billAmount"
+        placeholder="Bill value"
         value={bill}
-        onChange={(e) => handleBill(e.target.value)}
+        onChange={(e) => handleBill(Number(e.target.value))}
       />
     </div>
   );

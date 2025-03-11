@@ -1,10 +1,8 @@
 export default function Calculations({ bill, rating1, rating2 }) {
   const isOpen = bill > 0;
+  const tips = ((rating1 + rating2) / 200) * bill;
 
-  const tipsPercent = (Number(rating1 / 100) + Number(rating2 / 100)) / 2;
-  const tips = tipsPercent * Number(bill);
-
-  const totalAmount = Number(bill) + tips;
+  const totalAmount = bill + tips;
 
   return (
     isOpen && (
