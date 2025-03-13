@@ -26,7 +26,7 @@ export const serviceRating = [
 ];
 
 export default function App() {
-  const [bill, setBill] = useState(0);
+  const [bill, setBill] = useState("");
   const [myRating, setMyRating] = useState(0);
   const [friendRating, setFriendRating] = useState(0);
 
